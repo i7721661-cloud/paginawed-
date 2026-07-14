@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f3f1ec;
+    color: #2c2c2c;
+    line-height: 1.65;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #1c3d36;
+    padding: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #e8e6e1;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.93rem;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #2a5248;
+    color: #ffffff;
+}
+
+/* Logo debajo de la nav */
+.logo-container {
+    text-align: center;
+    padding: 18px 0 14px;
+    background-color: #eae7e0;
+    border-bottom: 1px solid #cfcbc3;
+}
+
+.logo-container img {
+    max-height: 110px;
+    width: auto;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    max-width: 1040px;
+    margin: 28px auto;
+    padding: 0 18px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1c3d36;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    border-bottom: 2px solid #5a7d72;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2a5248;
+    margin: 18px 0 10px;
+    font-size: 1.28rem;
+    font-weight: 600;
+}
+
+p, li {
+    margin-bottom: 11px;
+    text-align: justify;
+    font-size: 0.97rem;
+}
+
+/* Tarjetas */
+.card {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+    border: 1px solid #ddd9d0;
+    border-left: 4px solid #4a6b60;
+}
+
+/* Tabla de servicios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    background: #fff;
+    border: 1px solid #d0ccc4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 10px 11px;
+    text-align: left;
+    border-bottom: 1px solid #e0dcd4;
+}
+
+th {
+    background-color: #1c3d36;
+    color: #f0eeea;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f5f0;
+}
+
+tr:hover {
+    background-color: #ece9e2;
+}
+
+.precio {
+    font-weight: 600;
+    color: #1c3d36;
+    white-space: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Horario */
+.horario {
+    background: #eef4ef;
+    border-left-color: #3d6b4f;
+}
+
+/* Mapa */
+.mapa-container {
+    text-align: center;
+    margin: 18px 0;
+}
+
+.mapa-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #b8b4ab;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Clientes */
+.clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.cliente-card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd9d0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+}
+
+.cliente-card:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cliente-card img {
+    max-width: 115px;
+    max-height: 95px;
+    object-fit: contain;
+    margin-bottom: 9px;
+}
+
+.cliente-card h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.92rem;
+    color: #1c3d36;
+    font-weight: 600;
+}
+
+.principal {
+    border: 2px solid #a67c3d;
+    background: #fdfaf4;
+}
+
+/* Contacto */
+.contacto-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.contacto-item {
+    background: #fff;
+    padding: 16px 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd9d0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.contacto-item h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2a5248;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.redes a {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+    padding: 7px 13px;
+    background: #2a5248;
+    color: #f0eeea;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.87rem;
+}
+
+.redes a:hover {
+    background: #1c3d36;
+}
+
+/* Descargas Excel */
+.descargas {
+    background: #f9f5eb;
+    border-left-color: #a67c3d;
+    text-align: center;
+}
+
+.descargas a {
+    display: inline-block;
+    margin: 10px;
+    padding: 11px 22px;
+    background: #2a5248;
+    color: #f0eeea;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.descargas a:hover {
+    background: #1c3d36;
+}
+
+/* Footer */
+footer {
+    background-color: #1c3d36;
+    color: #c8c5bd;
+    text-align: center;
+    padding: 16px 14px;
+    margin-top: auto;
+    font-size: 0.88rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+    margin: 3px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    nav ul li a {
+        padding: 11px 13px;
+        font-size: 0.84rem;
+    }
+    h1 { font-size: 1.45rem; }
+    table { font-size: 0.84rem; }
+    th, td { padding: 7px 5px; }
+    body { font-size: 0.95rem; }
+}
